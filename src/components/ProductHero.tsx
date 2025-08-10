@@ -15,7 +15,7 @@ export const ProductHero = () => {
           Inframatt + WowShape + EndosTherapy
         </h1>
         <p className="text-xl md:text-2xl mb-8 opacity-90">
-          Revolutsiooniline kombokeskus keha kujundamiseks ja tervise parandamiseks
+          Revolutsiooniline kombo kiiresti parima figuuri saavutamiseks
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <span className="text-3xl md:text-4xl font-bold text-primary">89€</span>
