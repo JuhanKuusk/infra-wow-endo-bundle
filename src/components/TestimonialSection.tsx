@@ -91,8 +91,8 @@ export const TestimonialSection = () => {
                 <div className="text-sm text-muted-foreground">Rahulolu määr</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Edukat ravi</div>
+                <div className="text-3xl font-bold text-primary">15+</div>
+                <div className="text-sm text-muted-foreground">Aastat kogemusi</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary">24h</div>
