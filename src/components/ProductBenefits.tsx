@@ -1,23 +1,26 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Heart, Sparkles, Target, Timer, Waves } from "lucide-react";
 import treatmentImage from "@/assets/treatment-equipment.jpg";
+import endostherapyImage from "@/assets/endostherapy-treatment.jpg";
+import infrapunamattImage from "@/assets/infrapunamatt-treatment.jpg";
+import wowshapeImage from "@/assets/wowshape-treatment.jpg";
 
 export const ProductBenefits = () => {
   const benefits = [
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Infrapunamatt",
-      description: "Sügav soojusravi, mis parandab vereringe ja kiirendab metabolismi"
+      description: "Ideaalseim kaalulangusprotseduur, põletiku alandaja, paistetuse eemaldaja ning tervise parandaja"
     },
     {
       icon: <Waves className="w-8 h-8" />,
       title: "WowShape",
-      description: "Rasvpõletamine ja lihaste toonuse parandamine"
+      description: "Salendav kehamähis aitab vähendada vööümbermõõtu, pinguldada nahka ja stimuleerida lümfiringet"
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: "EndosTherapy",
-      description: "Lümfisüsteemi stimuleerimine ja toksiiide väljutamine"
+      description: "Tõhus tselluliidi- ja kehahooldus mikrovibratsiooni ja mikrosurve tehnoloogiaga"
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
@@ -33,6 +36,24 @@ export const ProductBenefits = () => {
       icon: <Timer className="w-8 h-8" />,
       title: "Kiired Tulemused",
       description: "Nähtavad tulemused juba esimestest seansidest"
+    }
+  ];
+
+  const products = [
+    {
+      image: infrapunamattImage,
+      title: "Infrapunamatt",
+      description: "Kulutad 1 tunni jooksul kuni 900 kcal. Kaal väheneb 1 tunniga 500g-1kg."
+    },
+    {
+      image: wowshapeImage,
+      title: "WowShape",
+      description: "Vähenda vööümbermõõtu kuni 2 cm juba esimese hooldusega."
+    },
+    {
+      image: endostherapyImage,
+      title: "EndosTherapy",
+      description: "Stimuleerib vereringet, lümfiringet ja aktiveerib rasvkoe lagunemist."
     }
   ];
 
@@ -71,6 +92,27 @@ export const ProductBenefits = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-lg" />
           </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {products.map((product, index) => (
+            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative h-48">
+                <img 
+                  src={product.image} 
+                  alt={product.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-bold text-lg">{product.title}</h4>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <p className="text-muted-foreground">{product.description}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         <div className="bg-primary/5 rounded-2xl p-8 text-center">
