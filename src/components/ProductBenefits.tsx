@@ -26,7 +26,7 @@ export const ProductBenefits = () => {
     },
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Efektiivne",
+      title: "Suunatud Efekt",
       description: "Täpne probleempiirkondadele suunamine"
     },
     {
