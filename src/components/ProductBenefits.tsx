@@ -6,7 +6,7 @@ export const ProductBenefits = () => {
   const benefits = [
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Inframatt Saun",
+      title: "Infrapunamatt",
       description: "Sügav soojusravi, mis parandab vereringe ja kiirendab metabolismi"
     },
     {
