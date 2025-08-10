@@ -16,27 +16,6 @@ const Index = () => {
         <button className="ml-2 hover:underline">Peida</button>
       </div>
 
-      {/* Top Categories Bar */}
-      <div className="bg-gray-50 border-b text-xs">
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex flex-wrap gap-1 items-center text-gray-600">
-            <a href="#" className="hover:text-pink-600 px-2">Tootekategooriad</a>
-            <a href="#" className="hover:text-pink-600 px-2">Collagenina</a>
-            <a href="#" className="hover:text-pink-600 px-2">Esiletõstetud</a>
-            <a href="#" className="hover:text-pink-600 px-2">INFRAMATT</a>
-            <a href="#" className="hover:text-pink-600 px-2">Juukseravi</a>
-            <a href="#" className="hover:text-pink-600 px-2">Kehahooldusseadmed</a>
-            <a href="#" className="hover:text-pink-600 px-2">KINKEKAARDID</a>
-            <a href="#" className="hover:text-pink-600 px-2">Labo tooted</a>
-            <a href="#" className="hover:text-pink-600 px-2">LPG</a>
-            <a href="#" className="hover:text-pink-600 px-2">Nahahooldus</a>
-            <a href="#" className="hover:text-pink-600 px-2">Salongihooldused</a>
-            <a href="#" className="hover:text-pink-600 px-2">SOODUSPAKKUMISED</a>
-            <a href="#" className="hover:text-pink-600 px-2">UUS ALGUS - BALI RETRIIT</a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navigation */}
       <nav className="bg-background border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
