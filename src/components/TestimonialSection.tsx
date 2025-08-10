@@ -80,7 +80,7 @@ export const TestimonialSection = () => {
         <div className="text-center mt-16">
           <div className="bg-primary/5 rounded-2xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-foreground">
-              Üle 500 Rahuloleva Kliendi
+              Üle 10 000 Rahuloleva Kleindi
             </h3>
             <p className="text-muted-foreground mb-6">
               Liitu meie suure rahuloleva klientide perekonnaga ja alusta oma muutuse teed juba täna!
