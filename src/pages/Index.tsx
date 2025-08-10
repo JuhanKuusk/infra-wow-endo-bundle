@@ -108,7 +108,7 @@ const Index = () => {
                     </div>
                     <div className="flex items-center gap-3">
                       <Clock className="w-5 h-5 text-wellness" />
-                      <span>E-P: 10:00-20:00, L: 10:00-16:00</span>
+                      <span>E-P: 09:00-21:00, L: 09:00-19:00, P: Kokkuleppel</span>
                     </div>
                   </div>
                 </Card>
