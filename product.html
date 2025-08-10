@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inframatt + WowShape + EndosTherapy Kombo | Kehastuudio</title>
+    <meta name="description" content="Revolutsiooniline kombo kiiresti parima figuuri saavutamiseks. Inframatt, WowShape ja EndosTherapy ühes pakettis 89€. Broneeri kohe!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 80vh;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('src/assets/hero-combo-treatment.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            z-index: 10;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .price-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e91e63;
+        }
+        
+        .price-text {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #e91e63;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #c2185b;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #333;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+        
+        .section-title p {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: #e91e63;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Products Section */
+        .products {
+            padding: 5rem 0;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            padding: 1.5rem;
+            color: white;
+        }
+        
+        .product-overlay h4 {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        
+        .product-content {
+            padding: 1.5rem;
+        }
+        
+        .product-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #e91e63, #ad1457);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .final-cta h3 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            color: #e91e63;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Inframatt + WowShape + EndosTherapy</h1>
+            <p>Revolutsiooniline kombo kiiresti parima figuuri saavutamiseks</p>
+            
+            <div class="price-section">
+                <span class="price">89€</span>
+                <span class="price-text">kolm protseduuri kokku</span>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Broneeri Kohe</a>
+                <a href="#" class="btn btn-secondary">Lisainfo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Miks valida just see kombopakett?</h2>
+                <p>Kolme tõhusa tehnika ühendamine tagab maksimaalse efektiivsuse ja kiiremad tulemused</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Infrapunamatt</h3>
+                    <p>Ideaalseim kaalulangusprotseduur, põletiku alandaja, paistetuse eemaldaja ning tervise parandaja</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌊</div>
+                    <h3>WowShape</h3>
+                    <p>Salendav kehamähis aitab vähendada vööümbermõõtu, pinguldada nahka ja stimuleerida lümfiringet</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">❤️</div>
+                    <h3>EndosTherapy</h3>
+                    <p>Tõhus tselluliidi- ja kehahooldus mikrovibratsiooni ja mikrosurve tehnoloogiaga</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Naha Noorendamine</h3>
+                    <p>Kollageeni tootmise suurendamine ja naha elastsuse parandamine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="src/assets/infrapunamatt-treatment.jpg" alt="Infrapunamatt">
+                        <div class="product-overlay">
+                            <h4>Infrapunamatt</h4>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <p>Kulutad 1 tunni jooksul kuni 900 kcal. Kaal väheneb 1 tunniga 500g-1kg.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="src/assets/wowshape-treatment.jpg" alt="WowShape">
+                        <div class="product-overlay">
+                            <h4>WowShape</h4>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <p>Vähenda vööümbermõõtu kuni 2 cm juba esimese hooldusega.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="src/assets/endostherapy-treatment.jpg" alt="EndosTherapy">
+                        <div class="product-overlay">
+                            <h4>EndosTherapy</h4>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <p>Stimuleerib vereringet, lümfiringet ja aktiveerib rasvkoe lagunemist.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="final-cta">
+                <h3>Üksteist Täiendavad Tehnoloogiad</h3>
+                <p>Meie kombineeritud lähenemine kasutab korraga kolme erinevat tehnikat, mis täiendavad teineteist ja annavad paremaid tulemusi kui üksikud protseduurid eraldi.</p>
+                <a href="#" class="btn btn-primary">Broneeri Oma Kombo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Broneeri Meie Uus Kombo</h2>
+                <p>Alusta oma teekonda täiusliku kehani juba täna</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Kontaktandmed</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+372 5151566</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>info@kehastuudio.ee</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Tallinn, Eesti</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕒</span>
+                        <span>E-P: 09:00-21:00, L: 09:00-19:00</span>
+                    </div>
+                </div>
+                
+                <div class="contact-card" style="background: linear-gradient(135deg, #e91e63, #ad1457); color: white;">
+                    <h3>Erisoodus Uutele Klientidele!</h3>
+                    <p style="margin: 1rem 0; opacity: 0.9;">Esimene kombo hooldus ainult 69€ (tavahind 89€)</p>
+                    <a href="#" class="btn" style="background: white; color: #e91e63; width: 100%;">Kasuta Erisoodust</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple interactivity
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Broneerimine suunatakse peagi vastava süsteemi kaudu!');
+            });
+        });
+    </script>
+</body>
+</html>
