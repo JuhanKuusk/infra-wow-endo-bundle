@@ -27,16 +27,6 @@ export const ProductBenefits = () => {
       title: "Naha Noorendamine",
       description: "Kollageeni tootmise suurendamine ja naha elastsuse parandamine"
     },
-    {
-      icon: <Target className="w-8 h-8" />,
-      title: "Suunatud Efekt",
-      description: "Täpne probleempiirkondadele suunamine"
-    },
-    {
-      icon: <Timer className="w-8 h-8" />,
-      title: "Kiired Tulemused",
-      description: "Nähtavad tulemused juba esimestest seansidest"
-    }
   ];
 
   const products = [
