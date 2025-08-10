@@ -26,8 +26,8 @@ export const ProductBenefits = () => {
     },
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Täpne Toime",
-      description: "Sihtmärkide täpne ravi probleempiirkondades"
+      title: "Efektiivne",
+      description: "Täpne probleempiirkondadele suunamine"
     },
     {
       icon: <Timer className="w-8 h-8" />,
