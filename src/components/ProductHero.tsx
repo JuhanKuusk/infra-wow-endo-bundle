@@ -25,7 +25,7 @@ export const ProductHero = () => {
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3">
             BRONEERI KOHE
           </Button>
-          <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary px-8 py-3">
+          <Button variant="secondary" size="lg" className="px-8 py-3">
             LISAINFO
           </Button>
         </div>
