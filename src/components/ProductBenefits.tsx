@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Heart, Sparkles, Target, Timer, Waves } from "lucide-react";
-import treatmentImage from "@/assets/treatment-equipment.jpg";
+import treatmentImage from "@/assets/wowshape-woman-treatment.jpg";
 import endostherapyImage from "@/assets/endostherapy-treatment.jpg";
 import infrapunamattImage from "@/assets/infrapunamatt-treatment.jpg";
 import wowshapeImage from "@/assets/wowshape-treatment.jpg";
