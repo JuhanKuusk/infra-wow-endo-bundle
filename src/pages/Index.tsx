@@ -16,6 +16,25 @@ const Index = () => {
         <button className="ml-2 hover:underline">Peida</button>
       </div>
 
+      {/* Download Section */}
+      <div className="bg-blue-50 text-blue-800 text-center py-3 px-4 border-b">
+        <div className="flex items-center justify-center gap-4">
+          <span className="text-sm">WooCommerce import fail:</span>
+          <Button 
+            size="sm" 
+            onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/woocommerce-import.csv';
+              link.download = 'woocommerce-import.csv';
+              link.click();
+            }}
+            className="bg-blue-600 hover:bg-blue-700 text-white"
+          >
+            Laadi alla CSV fail
+          </Button>
+        </div>
+      </div>
+
       {/* Main Navigation */}
       <nav className="bg-background border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
