@@ -5,6 +5,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import kehastuudioLogo from "@/assets/kehastuudio-logo.svg";
 
 const Index = () => {
   return (
@@ -42,10 +43,11 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">K</span>
-                </div>
-                <span className="font-serif font-bold text-xl text-gray-800">Kehastuudio</span>
+                <img 
+                  src={kehastuudioLogo} 
+                  alt="Kehastuudio logo" 
+                  className="h-8 w-auto"
+                />
               </div>
               
               {/* Search */}
@@ -173,10 +175,11 @@ const Index = () => {
             {/* Logo & Description */}
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">K</span>
-                </div>
-                <span className="font-serif font-bold text-gray-800">Kehastuudio</span>
+                <img 
+                  src={kehastuudioLogo} 
+                  alt="Kehastuudio logo" 
+                  className="h-6 w-auto"
+                />
               </div>
               <p className="text-muted-foreground text-sm">
                 15 aastat parimaid ilu- ja kaalulangetusprotseduure. 
