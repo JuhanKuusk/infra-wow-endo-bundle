@@ -96,7 +96,7 @@ const Index = () => {
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-wellness" />
-                      <span>+372 XXX XXXX</span>
+                      <span>+372 5151566</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <Mail className="w-5 h-5 text-wellness" />
@@ -181,6 +181,7 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4">Kontakt</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
+                <p>+372 5151566</p>
                 <p>info@kehastuudio.ee</p>
                 <p>Tallinn, Eesti</p>
                 <p>Haapsalu Kehastuudio</p>
