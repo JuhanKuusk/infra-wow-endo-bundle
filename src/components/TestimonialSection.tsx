@@ -83,7 +83,7 @@ export const TestimonialSection = () => {
               Üle 10 000 Rahuloleva Kleindi
             </h3>
             <p className="text-muted-foreground mb-6">
-              Liitu meie suure rahuloleva klientide perekonnaga ja alusta oma muutuse teed juba täna!
+              Liituge meie suure ja õnneliku kliendiperega ja alustage oma teekonda muutuse poole juba täna!
             </p>
             <div className="flex justify-center gap-8 text-center">
               <div>
