@@ -9,21 +9,80 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="bg-background/95 backdrop-blur-sm border-b sticky top-0 z-50">
+      {/* Top Banner */}
+      <div className="bg-wellness text-white text-center py-2 px-4 text-sm">
+        Sisestades täna sooduskoodi SUVEKOMBO - saate meie suvise hittpaketi 678 Euro asemel 499 Euroga. 
+        <button className="ml-2 hover:underline">Peida</button>
+      </div>
+
+      {/* Top Categories Bar */}
+      <div className="bg-secondary/50 border-b text-xs">
+        <div className="container mx-auto px-4 py-2">
+          <div className="flex flex-wrap gap-1 items-center text-muted-foreground">
+            <a href="#" className="hover:text-wellness px-2">Tootekategooriad</a>
+            <a href="#" className="hover:text-wellness px-2">Collagenina</a>
+            <a href="#" className="hover:text-wellness px-2">Esiletõstetud</a>
+            <a href="#" className="hover:text-wellness px-2">INFRAMATT</a>
+            <a href="#" className="hover:text-wellness px-2">Juukseravi</a>
+            <a href="#" className="hover:text-wellness px-2">Kehahooldusseadmed</a>
+            <a href="#" className="hover:text-wellness px-2">KINKEKAARDID</a>
+            <a href="#" className="hover:text-wellness px-2">Labo tooted</a>
+            <a href="#" className="hover:text-wellness px-2">LPG</a>
+            <a href="#" className="hover:text-wellness px-2">Nahahooldus</a>
+            <a href="#" className="hover:text-wellness px-2">Salongihooldused</a>
+            <a href="#" className="hover:text-wellness px-2">SOODUSPAKKUMISED</a>
+            <a href="#" className="hover:text-wellness px-2">UUS ALGUS - BALI RETRIIT</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
+      <nav className="bg-background border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-wellness rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">K</span>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-wellness rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">K</span>
+                </div>
+                <span className="font-serif font-bold text-xl">Kehastuudio</span>
               </div>
-              <span className="font-serif font-bold text-xl">Kehastuudio</span>
+              
+              {/* Search */}
+              <div className="hidden md:flex items-center">
+                <input 
+                  type="search" 
+                  placeholder="Search..." 
+                  className="px-3 py-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-wellness"
+                />
+              </div>
             </div>
-            <div className="hidden md:flex items-center gap-6">
-              <a href="#teenused" className="hover:text-wellness transition-colors">Teenused</a>
-              <a href="#hinnad" className="hover:text-wellness transition-colors">Hinnad</a>
-              <a href="#kontakt" className="hover:text-wellness transition-colors">Kontakt</a>
-              <Button className="gradient-hero">Broneeri Aeg</Button>
+
+            <div className="flex items-center gap-6">
+              <button className="md:hidden">
+                <span className="text-lg">≡</span>
+              </button>
+              
+              <div className="hidden md:flex items-center gap-6">
+                <div className="relative group">
+                  <button className="hover:text-wellness transition-colors">Salongihooldused</button>
+                </div>
+                <div className="relative group">
+                  <button className="hover:text-wellness transition-colors">Näohooldused</button>
+                </div>
+                <div className="relative group">
+                  <button className="hover:text-wellness transition-colors">Hoolduspaketid</button>
+                </div>
+                <a href="#" className="hover:text-wellness transition-colors">E-pood</a>
+                <a href="#" className="hover:text-wellness transition-colors">Hinnakiri</a>
+                <a href="#" className="hover:text-wellness transition-colors">Kontakt</a>
+                
+                <Button className="gradient-hero">
+                  BRONEERI AEG
+                </Button>
+                
+                <a href="#" className="text-sm hover:text-wellness">Logi sisse</a>
+              </div>
             </div>
           </div>
         </div>
@@ -108,17 +167,81 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="w-6 h-6 bg-wellness rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xs">K</span>
+      <footer className="bg-foreground/5 py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            {/* Logo & Description */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 bg-wellness rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">K</span>
+                </div>
+                <span className="font-serif font-bold">Kehastuudio</span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                15 aastat parimaid ilu- ja kaalulangetusprotseduure. 
+                Meie eesmärk on aidata klientidel püsida tervemad, säravamad ja õnnelikumad.
+              </p>
             </div>
-            <span className="font-serif font-bold">Kehastuudio</span>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="font-semibold mb-4">Teenused</h3>
+              <div className="space-y-2 text-sm">
+                <a href="#" className="block text-muted-foreground hover:text-wellness transition-colors">Salongihooldused</a>
+                <a href="#" className="block text-muted-foreground hover:text-wellness transition-colors">Näohooldused</a>
+                <a href="#" className="block text-muted-foreground hover:text-wellness transition-colors">Hoolduspaketid</a>
+                <a href="#" className="block text-muted-foreground hover:text-wellness transition-colors">E-pood</a>
+              </div>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="font-semibold mb-4">Kontakt</h3>
+              <div className="space-y-2 text-sm text-muted-foreground">
+                <p>info@kehastuudio.ee</p>
+                <p>Tallinn, Eesti</p>
+                <p>Haapsalu Kehastuudio</p>
+              </div>
+            </div>
+
+            {/* Language & Actions */}
+            <div>
+              <h3 className="font-semibold mb-4">Keel</h3>
+              <div className="flex gap-2 mb-4">
+                <button className="w-6 h-4 bg-blue-500 text-white text-xs rounded">EN</button>
+                <button className="w-6 h-4 bg-blue-500 text-white text-xs rounded">ET</button>
+                <button className="w-6 h-4 bg-blue-500 text-white text-xs rounded">RU</button>
+              </div>
+              
+              <div className="space-y-2">
+                <a href="https://wa.link/ly3nnj" className="block text-sm text-wellness hover:underline">Whatsapp Us</a>
+                <a href="tel:+372" className="block text-sm text-wellness hover:underline">Call Us</a>
+                <a href="mailto:info@kehastuudio.ee" className="block text-sm text-wellness hover:underline">Mail Us</a>
+              </div>
+            </div>
           </div>
-          <p className="text-muted-foreground text-sm">
-            © 2024 Kehastuudio. Kõik õigused kaitstud.
-          </p>
+
+          {/* Bottom Links */}
+          <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
+              <a href="#" className="hover:text-wellness">Esileht</a>
+              <a href="#" className="hover:text-wellness">Pood</a>
+              <a href="#" className="hover:text-wellness">Kasutustingimused</a>
+              <a href="#" className="hover:text-wellness">Tagasiside</a>
+              <a href="#" className="hover:text-wellness">Järelmaks</a>
+            </div>
+            
+            <div className="text-sm text-muted-foreground">
+              <a href="#" className="hover:text-wellness">Back to Top</a>
+            </div>
+          </div>
+          
+          <div className="text-center mt-6 pt-6 border-t">
+            <p className="text-muted-foreground text-sm">
+              © 2024 Kehastuudio. Kõik õigused kaitstud.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
